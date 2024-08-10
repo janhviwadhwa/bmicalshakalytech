@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8A2A2"
+    android:orientation="vertical"
+    tools:context=".ActivityHeightSelect">
+
+    <TextView
+        android:id="@+id/selectheighttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:text="Select Height"
+        android:textColor="#051468"
+        android:textSize="45.50dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="-50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="181dp"
+            android:layout_height="650.00dp"
+            android:src="@drawable/man2" />
+
+        <LinearLayout
+            android:id="@+id/llcm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="78dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Centimeter"
+                android:textSize="39dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/selectedcm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="26dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcheight"
+                android:layout_width="195dp"
+                android:layout_height="429dp"
+                android:layout_marginTop="13dp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="78dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feet"
+                android:textColor="#051468"
+                android:textSize="39dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/selectedfeet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="26dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rpfeet"
+                android:layout_width="195dp"
+                android:layout_height="169dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="Inches"
+                android:textColor="#051468"
+                android:textSize="39dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/selectedinch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="26dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rpinch"
+                android:layout_width="195dp"
+                android:layout_height="169dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llbuttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="Back"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/nextbtn"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:backgroundTint="#2196F3"
+            android:text="Next"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Back"
+            android:visibility="invisible"
+            />
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Calculate"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+</LinearLayout>
